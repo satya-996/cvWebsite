@@ -9,6 +9,11 @@ import { SkillsComponent } from './skills/skills.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { AwardsComponent } from './awards/awards.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { CertificationsComponent } from './certifications/certifications.component';
+import { MrComponent } from './mr/mr.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { ProjectsComponent } from './projects/projects.component';
     SkillsComponent,
     NavbarComponent,
     FooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AwardsComponent,
+    VolunteerComponent,
+    ExperienceComponent,
+    CertificationsComponent,
+    MrComponent
   ],
   imports: [
     BrowserModule,
