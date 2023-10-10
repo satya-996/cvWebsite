@@ -1,7 +1,7 @@
-import { Component, Renderer2, ElementRef } from '@angular/core';
+import { Component, HostListener, Renderer2, ElementRef ,RendererStyleFlags2} from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-navbar', 
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
@@ -16,5 +16,7 @@ export class NavbarComponent {
       this.renderer.removeClass(navbarNav, 'show');
     }
   }
+
+  
 }
 

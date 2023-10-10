@@ -1,0 +1,8 @@
+<!-- <h1 mat-dialog-title>{{ data.altText }}</h1> -->
+<div mat-dialog-content>
+  <img  [src]="data.imageSrc" alt="{{ data.altText }}" />
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCloseClick()">close</button>
+</div>
+
