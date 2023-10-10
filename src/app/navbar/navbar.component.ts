@@ -1,4 +1,5 @@
 import { Component, Renderer2, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +7,7 @@ import { Component, Renderer2, ElementRef } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  constructor(private renderer: Renderer2, private el: ElementRef,private router:Router) {}
 
   collapseNavbar() {
     const navbarToggler = this.el.nativeElement.querySelector('.navbar-toggler');
@@ -16,5 +17,10 @@ export class NavbarComponent {
       this.renderer.removeClass(navbarNav, 'show');
     }
   }
+
+  gotoPart(fragment: string) {
+    this.router.navigate([''], { fragment: fragment});
+  }
 }
+
 
