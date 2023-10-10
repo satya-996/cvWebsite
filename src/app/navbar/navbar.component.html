@@ -6,36 +6,40 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        
-        <li class="nav-item" (click)="gotoPart('home')" >
-          <a class="nav-link" aria-current="page" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" (click)="collapseNavbar()" fragment="home">Home</a>
+
+        <li class="nav-item" (click)="gotoPart('home')" id="homeNavItem">
+          <a style="margin-left: 100px;" class="nav-link "  routerLink="/" routerLinkActive="active-link" fragment="home" (click)="collapseNavbar()"  >Home</a>
         </li>
         
-        <li class="nav-item" (click)="gotoPart('education')" >
+        <li class="nav-item" (click)="gotoPart('education')" id="educationNavItem">
           <a class="nav-link" routerLink="/education" routerLinkActive="active-link"  (click)="collapseNavbar()" fragment="education">Education</a>
         </li>
-        <li class="nav-item" (click)="gotoPart('skills')">
+        <li class="nav-item" (click)="gotoPart('skills')" id="skillsNavItem">
           <a class="nav-link" routerLink="/skills" routerLinkActive="active-link" (click)="collapseNavbar()" fragment="skills">Skills</a>
         </li>
-        <li class="nav-item" (click)="gotoPart('projects')" >
+        <li class="nav-item" (click)="gotoPart('projects')" id="projectsNavItem">
           <a class="nav-link" routerLink="/projects" routerLinkActive="active-link" (click)="collapseNavbar()" fragment="projects" >Projects</a>
         </li>
-        <li class="nav-item" (click)="gotoPart('awards')" >
+        <li class="nav-item" (click)="gotoPart('awards')" id="awardsNavItem">
           <a class="nav-link" routerLink="/awards" routerLinkActive="active-link" (click)="collapseNavbar()" fragment="awards">Awards</a>
         </li>
-        <li class="nav-item" (click)="gotoPart('communityservice')">
+        <li class="nav-item" (click)="gotoPart('communityservice')" id="communityserviceNavItem">
           <a class="nav-link" routerLink="/communityservice" routerLinkActive="active-link" (click)="collapseNavbar()" fragment="communityservice">CommunityService</a>
         </li>
-        <li class="nav-item" (click)="gotoPart('experience')">
+        <li class="nav-item" (click)="gotoPart('experience')" id="experienceNavItem">
           <a class="nav-link" routerLink="/experience" routerLinkActive="active-link" (click)="collapseNavbar()" fragment="experience">Experience</a>
         </li>
-        <li class="nav-item" (click)="gotoPart('certifications')">
+        <li class="nav-item" (click)="gotoPart('certifications')" id="certificationsNavItem">
           <a class="nav-link" routerLink="/certifications" routerLinkActive="active-link" (click)="collapseNavbar()" fragment="certifications">Certifications</a>
         </li>
-        <li class="nav-item" (click)="gotoPart('mr')">
+        <li class="nav-item" (click)="gotoPart('mr')" id="mrNavItem">
           <a class="nav-link" routerLink="/medical&research" routerLinkActive="active-link" (click)="collapseNavbar()" fragment="mr">Medical&Research</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+
+
+

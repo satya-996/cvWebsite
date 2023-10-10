@@ -1,9 +1,11 @@
 
-.navbar-light .navbar-nav .nav-link.active-link{
-    font-weight: bold;
-    color: green;
-}
 .navbar{
     position: fixed;
     padding-right: 1500px;
 }
+
+
+.nav-item.active .nav-link {
+    font-weight: bold;
+    color: green;
+  }

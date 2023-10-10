@@ -14,6 +14,10 @@ import { VolunteerComponent } from './volunteer/volunteer.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { MrComponent } from './mr/mr.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ImageDialogComponent } from './image-dialog/image-dialog.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,17 @@ import { MrComponent } from './mr/mr.component';
     VolunteerComponent,
     ExperienceComponent,
     CertificationsComponent,
-    MrComponent
+    MrComponent,
+    ImageDialogComponent,
+ 
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,7 +2,7 @@
 <div class="container" id="projects">
     <h2 style="text-align: center">Projects</h2>
     <div class="row align-items-center">
-        <div class="col" style="margin-left: 15px;">
+        <div class="col a" style="margin-left: 15px;">
             <img src="assets/images/pnuemonia.png" alt="Pneumonia project" />
         </div>
         <div class="col-12 col-md-6 order-md-2">
@@ -13,8 +13,8 @@
             <p class="date">Dec 2022</p>
         </div>
         <div class="col col-md-4 order-md-3">
-            <img class="zoom" src="assets/images/pnue.PNG" alt="Pneumonia project"
-                onclick="openModal('assets/images/pnue.PNG')" />
+            <img class="zoom" src="assets/images/pnue.PNG" alt="Pneumonia project" 
+            (click)="openModal('assets/images/pnue.PNG', 'Sleep project')" />
         </div>
     </div>
     <div id="shdw" class="row align-items-center">
@@ -35,7 +35,7 @@
         </div>
         <div class="col col-md-4 order-md-3">
             <img class="zoom" style="margin-bottom: 25px;"src="assets/images/rat.png" alt="Social project"
-                onclick="openModal('assets/images/rat.png')" />
+            (click)="openModal('assets/images/rat.png', 'Sleep project')" />
         </div>
     </div>
 
@@ -52,7 +52,7 @@
         </div>
         <div class="col col-md-4 order-md-3">
             <img class="zoom" src="assets/images/sleep.png" alt="Sleep project"
-                onclick="openModal('assets/images/sleep.png')" />
+            (click)="openModal('assets/images/sleep.png', 'Sleep project')" />
         </div>
     </div>
 
@@ -66,7 +66,7 @@
         </div>
         <div class="col col-md-4 order-md-3">
             <img class="zoom" style="margin-top: 25px" src="assets/images/science.jpeg" alt="CS project"
-                onclick="openModal('assets/images/science.jpeg')" />
+            (click)="openModal('assets/images/science.jpeg', 'CS project')" />
         </div>
     </div>
 </div>

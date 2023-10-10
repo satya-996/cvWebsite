@@ -12,3 +12,19 @@
 .col{
   margin-right: 60px;
 }
+@media (max-width: 768px) {
+ .col-md-4 img {
+    height: 100px;
+    width: 100px;
+    margin-left: 120px;
+  }
+
+ .a img {
+    height: 50px;
+    width: 50px;
+    margin-left: 150px;
+  }
+  #shdw {
+    margin-top: 50px;
+  }
+}
